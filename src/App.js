@@ -1,17 +1,27 @@
 import React from "react";
+import styled from "styled-components";
 import GlobalStyles from "./globalStyles.js";
-import MainLayout from "./MainLayout.jsx";
-import MainComponent from "./MainComponent.jsx";
+import MainComponent from "./components/MainComponent/MainComponent.jsx";
 
-function App() {
+const Layout = styled.div`
+  background-color: #efefef;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const App = () => {
   return (
-    <div>
+    <>
       <GlobalStyles />
-      <MainLayout>
+      <Layout>
         <MainComponent />
-      </MainLayout>
-    </div>
+      </Layout>
+    </>
   );
-}
+};
 
 export default App;

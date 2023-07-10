@@ -2,28 +2,15 @@ import styled from "styled-components";
 
 const StyledMainComponent = styled.div`
   border: 1px solid black;
+  box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.25);
+
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  gap: 17px;
 
   padding: 24px 30px;
-
-  h1 {
-    /* display: block; */
-    border: 1px solid red;
-    margin: 0;
-  }
-
-  .password-container {
-    border: 1px dashed black;
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
 `;
 
 export default StyledMainComponent;
