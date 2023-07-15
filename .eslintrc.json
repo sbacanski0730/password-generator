@@ -18,6 +18,8 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "arrow-body-style": ["error", "always"]
+    "arrow-body-style": ["error", "as-needed"],
+    "react/prop-types": "off",
+    "no-plusplus": 0
   }
 }

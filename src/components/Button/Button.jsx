@@ -19,12 +19,13 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ label }) => {
-  return <StyledButton>{label}</StyledButton>;
-};
+const Button = ({ label, onClick }) => (
+  <StyledButton onClick={onClick}>{label}</StyledButton>
+);
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Button;
