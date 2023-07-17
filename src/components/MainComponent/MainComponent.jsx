@@ -53,7 +53,10 @@ const MainComponent = () => {
         id="password-length"
         value={formValues.passwordLength}
         onChange={(e) => {
-          dispatch({ type: "PASSWORD_LENGTH", value: e.target.value });
+          dispatch({
+            type: "PASSWORD_LENGTH",
+            value: e.target.value,
+          });
         }}
       />
       <FormField

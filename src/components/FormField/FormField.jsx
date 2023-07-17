@@ -2,15 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import StyledFormField from "./FormField.styles.js";
 
-const FormField = ({
-  label,
-  name,
-  id,
-  type = "number",
-  value,
-  checked = false,
-  onChange,
-}) => (
+const FormField = ({ label, name, id, type, value, checked, onChange }) => (
   <StyledFormField>
     <input
       name={name}

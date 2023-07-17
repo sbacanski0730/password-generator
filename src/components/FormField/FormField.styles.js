@@ -45,6 +45,7 @@ const StyledFormField = styled.div`
       -moz-appearance: none;
       -o-appearance: none;
       appearance: none;
+
       height: 25px;
       width: 25px;
     }
@@ -59,6 +60,7 @@ const StyledFormField = styled.div`
       -moz-appearance: none;
       -o-appearance: none;
       appearance: none;
+
       height: 25px;
       width: 25px;
       border: 1px solid #121212;
