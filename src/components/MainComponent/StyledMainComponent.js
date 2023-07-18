@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledMainComponent = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.25);
 
   display: flex;
