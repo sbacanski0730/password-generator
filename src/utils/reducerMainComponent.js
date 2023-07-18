@@ -8,9 +8,11 @@ const formFieldsNames = {
 const reducerMainComponent = (state, action) => {
   switch (action.type) {
     case "PASSWORD_LENGTH": {
-      if (action.value === "") {
-        return state;
-      }
+      if (action.value === "" || state.length === 1)
+        return { ...state, [formFieldsNames.passwordLength]: "0" };
+
+      if (action.value === "" || !state.length === 1) return state;
+
       return {
         ...state,
         [formFieldsNames.passwordLength]: action.value.slice(

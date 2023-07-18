@@ -9,7 +9,7 @@ const generatePassword = (length, uppercaseLetters, numbers, symbols) => {
   if (numbers) alphabet += numbersSet;
   if (symbols) alphabet += symbolsSet;
 
-  for (let i = 0; i <= length; i++) {
+  for (let i = 0; i < +length; i++) {
     const placeInAlphabet = Math.floor(Math.random() * alphabet.length);
     generatedPassword += alphabet[placeInAlphabet];
   }
