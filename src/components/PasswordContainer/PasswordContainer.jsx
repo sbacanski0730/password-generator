@@ -34,19 +34,12 @@ const Container = styled.div`
   }
 `;
 
-// eslint-disable-next-line no-unused-vars
-const PasswordContainer = ({ generatedPassword }) => {
-  return (
-    <Container>
-      {generatedPassword ? (
-        <h2>{generatedPassword}</h2>
-      ) : (
-        <h2 className="placeholder">ad2fqabte@ams124</h2>
-      )}
-      <CopyIcon />
-    </Container>
-  );
-};
+const PasswordContainer = ({ generatedPassword }) => (
+  <Container>
+    <h2>{generatedPassword}</h2>
+    <CopyIcon />
+  </Container>
+);
 
 PasswordContainer.propTypes = {
   generatedPassword: PropTypes.string,

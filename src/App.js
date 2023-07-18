@@ -13,15 +13,13 @@ const Layout = styled.div`
   justify-content: center;
 `;
 
-const App = () => {
-  return (
-    <>
-      <GlobalStyles />
-      <Layout>
-        <MainComponent />
-      </Layout>
-    </>
-  );
-};
+const App = () => (
+  <>
+    <GlobalStyles />
+    <Layout>
+      <MainComponent />
+    </Layout>
+  </>
+);
 
 export default App;
