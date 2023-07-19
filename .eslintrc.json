@@ -10,6 +10,16 @@
   },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "import/extensions": [1, "ignorePackages"]
+    "import/extensions": [1, "ignorePackages"],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"],
+    "react/prop-types": "off",
+    "no-plusplus": 0
   }
 }
