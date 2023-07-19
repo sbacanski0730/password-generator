@@ -16,7 +16,14 @@ const Container = styled.div`
   h2 {
     flex: 8;
 
-    font-size: 29px;
+    font-size: ${(props) => {
+      if (props.password.length >= 25) return "15px";
+      if (props.password.length >= 20) return "20px";
+      if (props.password.length >= 18) return "23px";
+      if (props.password.length >= 15) return "26px";
+      return "29px";
+    }};
+
     font-weight: 400;
     letter-spacing: 4px;
     text-align: center;
@@ -34,17 +41,17 @@ const Container = styled.div`
   }
 `;
 
-const PasswordContainer = ({ generatedPassword }) => (
-  <Container>
-    <h2>{generatedPassword}</h2>
+const PasswordContainer = ({ password }) => (
+  <Container password={password}>
+    <h2>{password}</h2>
     <CopyIcon />
   </Container>
 );
 
 PasswordContainer.propTypes = {
-  generatedPassword: PropTypes.string,
+  password: PropTypes.string,
 };
 PasswordContainer.defaultProps = {
-  generatedPassword: "",
+  password: "",
 };
 export default PasswordContainer;
