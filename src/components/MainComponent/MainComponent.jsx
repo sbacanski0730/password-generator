@@ -46,7 +46,7 @@ const MainComponent = () => {
   return (
     <StyledMainComponent>
       <Title>Password Generator</Title>
-      <PasswordContainer generatedPassword={password} />
+      <PasswordContainer password={password} />
       <FormField
         label="Password length"
         name="passwordLength"
