@@ -13,6 +13,10 @@ const reducerMainComponent = (state, action) => {
 
       if (action.value === "" || !state.length === 1) return state;
 
+      if (parseInt(action.value.slice(action.value.length - 2), 10) > 30) {
+        return { ...state, [formFieldsNames.passwordLength]: "30" };
+      }
+
       return {
         ...state,
         [formFieldsNames.passwordLength]: action.value.slice(
