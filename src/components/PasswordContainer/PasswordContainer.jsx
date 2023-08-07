@@ -12,6 +12,7 @@ const Container = styled.div`
   justify-content: center;
 
   padding: 15px 0;
+  min-height: 64px;
 
   h2 {
     flex: 8;
