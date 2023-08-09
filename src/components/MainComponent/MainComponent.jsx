@@ -1,7 +1,7 @@
 import React, { useReducer, useState, useEffect } from "react";
 import generatePassword from "../../utils/generatePassword.js";
 import reducerMainComponent from "../../utils/reducerMainComponent.js";
-import StyledMainComponent from "./StyledMainComponent.js";
+import StyledMainComponent from "./MainComponent.styles.js";
 import FormField from "../FormField/FormField.jsx";
 import Button from "../Button/Button.jsx";
 import Title from "../Title/Title.jsx";

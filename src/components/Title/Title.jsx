@@ -6,5 +6,6 @@ const Title = styled.h1`
   color: #121212;
   padding: 0 30px;
   margin-bottom: 20px;
+  user-select: none;
 `;
 export default Title;
