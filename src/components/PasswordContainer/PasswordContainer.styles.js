@@ -11,8 +11,6 @@ const StyledPasswordContainer = styled.div`
   padding: 15px 0;
   min-height: 64px;
 
-  /* border: 1px solid yellow; */
-
   h2 {
     flex: 8;
 
@@ -30,20 +28,22 @@ const StyledPasswordContainer = styled.div`
   }
 
   .icon-wrapper {
-    position: relative;
-
     flex: 2;
-
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   svg {
-    /* flex: 2; */
-
-    color: #ffffff;
+    color: #ffffffdd;
     font-size: 29px;
+    transition: color 100ms linear;
+
+    &:hover {
+      cursor: pointer;
+      color: #ffffff;
+    }
   }
 `;
 
