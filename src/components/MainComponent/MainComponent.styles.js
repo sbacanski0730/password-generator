@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledMainComponent = styled.div`
+const StyledMainComponent = styled.main`
   /* border: 1px solid black; */
   box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.25);
 
