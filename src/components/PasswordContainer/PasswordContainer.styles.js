@@ -9,7 +9,7 @@ const StyledPasswordContainer = styled.div`
   justify-content: center;
 
   padding: 15px 0;
-  min-height: 64px;
+  min-height: 69px;
 
   h2 {
     flex: 8;

@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useEffect } from "react";
+import React, { useReducer, useState, useEffect, useCallback } from "react";
 import generatePassword from "../../utils/generatePassword.js";
 import reducerMainComponent from "../../utils/reducerMainComponent.js";
 import StyledMainComponent from "./MainComponent.styles.js";
@@ -42,6 +42,27 @@ const MainComponent = () => {
   useEffect(() => {
     handleGenerate();
   }, []);
+
+  const handleEnterClickByCallback = useCallback(
+    (e) => {
+      if (e.key === "Enter") {
+        handleGenerate();
+      }
+    },
+    [
+      formValues.passwordLength,
+      formValues.uppercase,
+      formValues.numbers,
+      formValues.symbols,
+    ]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleEnterClickByCallback);
+
+    return () =>
+      document.removeEventListener("keydown", handleEnterClickByCallback);
+  }, [handleEnterClickByCallback]);
 
   return (
     <StyledMainComponent>
